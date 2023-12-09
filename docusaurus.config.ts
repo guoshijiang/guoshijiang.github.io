@@ -36,7 +36,7 @@ const config: Config = {
       ({
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
-        language: ['zh', 'en'],
+        // language: ['zh', 'en'],
       }),
     ],
   ],
@@ -55,7 +55,7 @@ const config: Config = {
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/bridge-alchemy/bridge-alchemy.github.io',
         },
         theme: {
           customCss: './src/css/custom.css',
