@@ -39,7 +39,6 @@ export default function Product({
           />
           <div className={clsx('avatar__intro', styles.productMeta)}>
             <strong className="avatar__name">{name}</strong>
-            <span>@{handle}</span>
           </div>
         </div>
       </div>
