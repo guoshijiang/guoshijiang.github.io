@@ -4,8 +4,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-import Tweet from '@site/src/components/Tweet';
-import Tweets, {type TweetItem} from '@site/src/data/tweets';
+import PRODUCT from '@site/src/components/PRODUCT';
+import PRODUCTs, {type ProductItem} from '@site/src/data/products';
 import Translate, {translate} from '@docusaurus/Translate';
 import Typist from 'react-typist';
 
@@ -61,23 +61,23 @@ function HomepageHeader() {
   );
 }
 
-function TweetsSection() {
-  const tweetColumns: TweetItem[][] = [[], [], []];
-  Tweets.filter((tweet) => tweet.showOnHomepage).forEach((tweet, i) =>
-    tweetColumns[i % 3]!.push(tweet),
+function PRODUCTsSection() {
+  const productColumns: ProductItem[][] = [[], [], []];
+  PRODUCTs.filter((product) => product.showOnHomepage).forEach((product, i) =>
+    productColumns[i % 3]!.push(product),
   );
 
   return (
     <div className={clsx(styles.section, styles.sectionAlt)}>
       <div className="container">
         <Heading as="h2" className={clsx('margin-bottom--lg', 'text--center')}>
-          <Translate>💬 Messages from Team Members</Translate>
+          <Translate>👏 Our Products</Translate>
         </Heading>
-        <div className={clsx('row', styles.tweetsSection)}>
-          {tweetColumns.map((tweetItems, i) => (
+        <div className={clsx('row', styles.productsSection)}>
+          {productColumns.map((productItems, i) => (
             <div className="col col--4" key={i}>
-              {tweetItems.map((tweet) => (
-                <Tweet {...tweet} key={tweet.url} />
+              {productItems.map((product) => (
+                <PRODUCT {...product} key={product.url} />
               ))}
             </div>
           ))}
@@ -93,12 +93,12 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="An infrastructure which support Ethereum deposit to any layer2, any layer2 withdraw to Ethereum, any layer2 transfer to any layer2">
+      description="An infrastructure which support l1 deposit to any l2, any l2 withdraw to l1, any l2 transfer to any l2">
       <TopBanner />
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-        <TweetsSection />
+        <PRODUCTsSection />
       </main>
     </Layout>
   );

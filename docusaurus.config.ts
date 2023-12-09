@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Bridge Alchemy',
-  tagline: 'An infrastructure which support Ethereum deposit to any layer2, any layer2 withdraw to Ethereum, any layer2 transfer to any layer2',
+  tagline: 'An infrastructure which support l1 deposit to any l2, any l2 withdraw to l1, any l2 transfer to any l2',
   favicon: 'img/logo.png',
 
   url: 'https://bridge-alchemy.github.io/',

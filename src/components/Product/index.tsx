@@ -21,7 +21,7 @@ export interface Props {
   githubUsername: string;
 }
 
-export default function Tweet({
+export default function PRODUCT({
   url,
   handle,
   name,
@@ -30,7 +30,7 @@ export default function Tweet({
   githubUsername,
 }: Props): JSX.Element {
   return (
-    <div className={clsx('card', styles.tweet)}>
+    <div className={clsx('card', styles.product)}>
       <div className="card__header">
         <div className="avatar">
           <img
@@ -41,17 +41,17 @@ export default function Tweet({
             height="48"
             loading="lazy"
           />
-          <div className={clsx('avatar__intro', styles.tweetMeta)}>
+          <div className={clsx('avatar__intro', styles.productMeta)}>
             <strong className="avatar__name">{name}</strong>
             <span>@{handle}</span>
           </div>
         </div>
       </div>
 
-      <div className={clsx('card__body', styles.tweet)}>{content}</div>
+      <div className={clsx('card__body', styles.product)}>{content}</div>
 
       <div className="card__footer">
-        <Link className={clsx(styles.tweetMeta, styles.tweetDate)} to={url}>
+        <Link className={clsx(styles.productMeta, styles.productDate)} to={url}>
           {date}
         </Link>
       </div>

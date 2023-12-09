@@ -127,7 +127,7 @@ html[data-theme='dark'] .topBannerTitleText {
   }
 }
 
-.tweetsSection > :global(.col) > * {
+.productsSection > :global(.col) > * {
   margin-bottom: 2rem;
 }
 
