@@ -25,7 +25,7 @@ const Products: ProductItem[] = [
       </>
     ),
     showOnHomepage: true,
-    imgUrl: "",
+    imgUrl: "img/logo.png",
   },
   {
     url: 'https://github.com/bridge-alchemy/wrap-bridge',
@@ -36,7 +36,7 @@ const Products: ProductItem[] = [
       </>
     ),
     showOnHomepage: true,
-    imgUrl: "",
+    imgUrl: "img/logo.png",
   },
   {
     url: 'https://github.com/bridge-alchemy/acorus-bridge',
@@ -47,7 +47,7 @@ const Products: ProductItem[] = [
       </>
     ),
     showOnHomepage: true,
-    imgUrl: "",
+    imgUrl: "img/logo.png",
   },
   {
     url: 'https://github.com/bridge-alchemy/selaginella',
@@ -58,7 +58,7 @@ const Products: ProductItem[] = [
       </>
     ),
     showOnHomepage: true,
-    imgUrl: "",
+    imgUrl: "img/logo.png",
   },
 ];
 
