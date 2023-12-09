@@ -50,12 +50,12 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/bridge-alchemy/bridge-alchemy.github.io',
+            'https://github.com/bridge-alchemy/bridge-alchemy.github.io/tree/main/',
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/bridge-alchemy/bridge-alchemy.github.io',
+            'https://github.com/bridge-alchemy/bridge-alchemy.github.io/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
