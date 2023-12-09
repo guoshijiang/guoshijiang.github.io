@@ -16,7 +16,7 @@ function TopBanner() {
     <div className={styles.topBanner}>
       <div className={styles.topBannerTitle}>
         {'🎉\xa0'}
-        <Link to="/blog/releases/3.0" className={styles.topBannerTitleText}>
+        <Link to="/blog" className={styles.topBannerTitleText}>
           <Translate id="homepage.banner.launch.3.0">
             {'Welcome to join us!'}
           </Translate>

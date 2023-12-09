@@ -36,7 +36,7 @@ const config: Config = {
       ({
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
-        // language: ['zh', 'en'],
+        language: ['zh', 'en'],
       }),
     ],
   ],
