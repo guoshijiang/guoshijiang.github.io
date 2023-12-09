@@ -93,7 +93,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Layer2 bridge infrastructure">
+      description="An infrastructure which can support Ethereum deposit token to any layer2, any layer2 withdraw token to Ethereum, any layer2 transfer token to any layer2">
       <TopBanner />
       <HomepageHeader />
       <main>
