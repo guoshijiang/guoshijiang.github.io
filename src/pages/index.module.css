@@ -1,0 +1,151 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.section {
+  padding: 40px 0;
+}
+
+.sectionAlt {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.sectionInner {
+  margin: 0 auto;
+}
+
+.HeroContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 10px 0px;
+  grid-template-areas:
+    'HeroTitle'
+    'HeroDescription';
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+  grid-area: HeroContent;
+}
+
+.HeroTitle {
+  grid-area: HeroTitle;
+  color: var(--ifm-color-primary);
+  font-size: 50px;
+  text-transform: uppercase;
+  text-shadow: rgb(216, 60, 13) 5px 5px 10px;
+}
+
+.HeroDescription {
+  grid-area: HeroDescription;
+  font-size: 30px;
+}
+
+
+ .announcement {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 48px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.announcementDark {
+  background-color: #20232a;
+  color: #fff;
+  /* Reapply the primary color, because it has been locally overridden as
+   * the dark theme color */
+  --ifm-link-color: var(--ifm-color-primary);
+}
+
+.announcementInner {
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+.topBanner {
+  font-size: 20px;
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topBannerTitle {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .topBannerTitle {
+    font-size: 40px;
+  }
+}
+
+.topBannerTitleText {
+  background: linear-gradient(
+    90deg,
+    rgb(131 58 180 / 100%) 0%,
+    rgb(253 29 29 / 100%) 50%,
+    rgb(252 176 69 / 100%) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.topBannerTitleText:hover {
+  border-bottom: solid 2px;
+  border-color: rgb(152 0 255);
+}
+
+html[data-theme='dark'] .topBannerTitleText {
+  background: linear-gradient(
+    90deg,
+    rgb(152 0 255) 0%,
+    rgb(246 41 41) 50%,
+    rgb(255 169 8) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.topBannerDescription {
+  font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .topBannerDescription {
+    font-size: 16px;
+    white-space: normal;
+  }
+}
+
+.tweetsSection > :global(.col) > * {
+  margin-bottom: 2rem;
+}
+
+ .heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
