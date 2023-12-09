@@ -14,20 +14,16 @@ import styles from './styles.module.css';
 
 export interface Props {
   url: string;
-  handle: string;
   name: string;
   content: ReactNode;
-  date: string;
-  githubUsername: string;
+  imgUrl: string;
 }
 
-export default function PRODUCT({
+export default function Product({
   url,
-  handle,
   name,
   content,
-  date,
-  githubUsername,
+  imgUrl,
 }: Props): JSX.Element {
   return (
     <div className={clsx('card', styles.product)}>
@@ -36,7 +32,7 @@ export default function PRODUCT({
           <img
             alt={name}
             className="avatar__photo"
-            src={`https://unavatar.io/twitter/${handle}?fallback=https://github.com/${githubUsername}.png`}
+            src={imgUrl}
             width="48"
             height="48"
             loading="lazy"
@@ -51,9 +47,7 @@ export default function PRODUCT({
       <div className={clsx('card__body', styles.product)}>{content}</div>
 
       <div className="card__footer">
-        <Link className={clsx(styles.productMeta, styles.productDate)} to={url}>
-          {date}
-        </Link>
+        <Link className={clsx(styles.productMeta, styles.productDate)} to={url}></Link>
       </div>
     </div>
   );

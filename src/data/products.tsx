@@ -9,13 +9,13 @@
 
 import React from 'react';
 
-import type {Props as PRODUCT} from '../components/PRODUCT';
+import type {Props as Product} from '../components/Product';
 
-export type ProductItem = PRODUCT & {
+export type ProductItem = Product & {
   showOnHomepage: boolean;
 };
 
-const PRODUCTS: ProductItem[] = [
+const Products: ProductItem[] = [
   {
     url: 'https://github.com/bridge-alchemy/acorus',
     name: 'acorus',
@@ -25,7 +25,7 @@ const PRODUCTS: ProductItem[] = [
       </>
     ),
     showOnHomepage: true,
-    githubUsername: 'bridge-alchemy',
+    imgUrl: "",
   },
   {
     url: 'https://github.com/bridge-alchemy/wrap-bridge',
@@ -36,7 +36,7 @@ const PRODUCTS: ProductItem[] = [
       </>
     ),
     showOnHomepage: true,
-    githubUsername: 'arcanis',
+    imgUrl: "",
   },
   {
     url: 'https://github.com/bridge-alchemy/acorus-bridge',
@@ -47,7 +47,7 @@ const PRODUCTS: ProductItem[] = [
       </>
     ),
     showOnHomepage: true,
-    githubUsername: 'mlynch',
+    imgUrl: "",
   },
   {
     url: 'https://github.com/bridge-alchemy/selaginella',
@@ -58,8 +58,8 @@ const PRODUCTS: ProductItem[] = [
       </>
     ),
     showOnHomepage: true,
-    githubUsername: 'supabase',
+    imgUrl: "",
   },
 ];
 
-export default PRODUCTS;
+export default Products;

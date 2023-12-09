@@ -4,8 +4,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-import PRODUCT from '@site/src/components/PRODUCT';
-import PRODUCTs, {type ProductItem} from '@site/src/data/products';
+import Product from '@site/src/components/Product';
+import Products, {type ProductItem} from '@site/src/data/products';
 import Translate, {translate} from '@docusaurus/Translate';
 import Typist from 'react-typist';
 
@@ -61,9 +61,9 @@ function HomepageHeader() {
   );
 }
 
-function PRODUCTsSection() {
+function ProductsSection() {
   const productColumns: ProductItem[][] = [[], [], []];
-  PRODUCTs.filter((product) => product.showOnHomepage).forEach((product, i) =>
+  Products.filter((product) => product.showOnHomepage).forEach((product, i) =>
     productColumns[i % 3]!.push(product),
   );
 
@@ -77,7 +77,7 @@ function PRODUCTsSection() {
           {productColumns.map((productItems, i) => (
             <div className="col col--4" key={i}>
               {productItems.map((product) => (
-                <PRODUCT {...product} key={product.url} />
+                <Product {...product} key={product.url} />
               ))}
             </div>
           ))}
@@ -98,7 +98,7 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-        <PRODUCTsSection />
+        <ProductsSection />
       </main>
     </Layout>
   );
