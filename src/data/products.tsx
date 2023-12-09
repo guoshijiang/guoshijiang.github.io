@@ -32,7 +32,7 @@ const Products: ProductItem[] = [
     name: 'wrap-bridge',
     content: (
       <>
-        Wrap all layer2 bridge contract support transfer ETH, Erc20 token and Nft from this layer2 to another layer2
+        Wrap all layer2 bridge contract support transfer ETH, Erc20 token and Nft etc from this layer2 to another layer2
       </>
     ),
     showOnHomepage: true,
