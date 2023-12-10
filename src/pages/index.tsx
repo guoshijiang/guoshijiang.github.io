@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import Product from '@site/src/components/Product';
+import Teams from '@site/src/data/teams';
 import Products, {type ProductItem} from '@site/src/data/products';
 import Translate, {translate} from '@docusaurus/Translate';
 import Typist from 'react-typist';
@@ -87,6 +88,36 @@ function ProductsSection() {
   );
 }
 
+function TeamsSection() {
+  return (
+    <div className={clsx(styles.section)}>
+      <div className="container">
+        <Heading as="h2" className={clsx('margin-bottom--lg', 'text--center')}>
+          <Translate>👥 Team Members</Translate>
+        </Heading>
+        <div className="row">
+          {Teams.map((team) => (
+            <div className="col" key={team.name}>
+              <div className="avatar avatar--vertical margin-bottom--sm">
+                <img
+                  alt={team.name}
+                  className="avatar__photo avatar__photo--xl"
+                  src={team.imgUrl}
+                  style={{overflow: 'hidden'}}
+                  loading="lazy"
+                />
+                <div className="avatar__intro padding-top--sm">
+                  <div className="avatar__name">{team.name}</div>
+                  <small className="avatar__subtitle">{team.title}</small>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
@@ -99,6 +130,7 @@ export default function Home(): JSX.Element {
       <main>
         <HomepageFeatures />
         <ProductsSection />
+        <TeamsSection />
       </main>
     </Layout>
   );
