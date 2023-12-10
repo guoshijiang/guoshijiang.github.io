@@ -8,7 +8,7 @@ export type PartnerItem = Partner & {
 
 const Partners: PartnerItem[] = [
   {
-    url: 'https://cdn.dribbble.com/users/534648/screenshots/7069859/nextdao_2x_4x.jpg',
+    url: 'https://branditechture.agency/brand-logos/wp-content/uploads/2022/08/MANTRA-DAO-1024x709.png',
     showOnHomepage: true,
   },
   {

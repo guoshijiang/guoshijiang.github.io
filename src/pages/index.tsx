@@ -93,7 +93,7 @@ function ProductsSection() {
 function PartnersSection() {
   const partnerColumns: PartnerItem[][] = [[], [], []];
   Partners.filter((partner) => partner.showOnHomepage).forEach((partner, i) =>
-    partnerColumns[i % 5]!.push(partner)
+    partnerColumns[i % 3]!.push(partner)
   );
 
   return (
