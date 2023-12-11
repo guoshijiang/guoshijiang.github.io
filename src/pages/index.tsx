@@ -98,50 +98,68 @@ function CommunitySection() {
         <Heading as="h2" className={clsx("margin-bottom--lg", "text--center")}>
           <Translate>❤️ Join the Community</Translate>
         </Heading>
-        <div className="row">
-          <div className="col">
+        <div className={styles.buttons}>
           <Link
-              className="button button-discord button--lg"
-              to="https://discord.gg/9N62gJgMVW"
-            >
-              <img
-                className={styles.Icon}
-                src={useBaseUrl("/img/discord.svg")}
-                alt="Discord Logo"
-                width={40}
-                height={40}
-              />{" "}
-              <span className={styles.ButtonText}>Discord</span>
-            </Link>
+            className={clsx(
+              'button button-icon button--lg',
+              styles.getStarted,
+          )}
+            to="https://discord.gg/9N62gJgMVW"
+          >
+            <img
+              className={styles.Icon}
+              src={useBaseUrl("/img/discord.svg")}
+              alt="Discord Logo"
+              width={40}
+              height={40}
+            />{" "}
+            <span className={styles.ButtonText}>Discord</span>
+          </Link>
 
-            <Link
-              className="button button-telegram button--lg"
-              to="https://t.me/+F2a3OS2rrGBlOGFl"
-            >
-              <img
-                className={styles.Icon}
-                src={useBaseUrl("/img/telegram.svg")}
-                alt="Telegram Logo"
-                width={40}
-                height={40}
-              />{" "}
-              <span className={styles.ButtonText}>Telegram</span>
-            </Link>
+          <Link
+            className={clsx(
+              'button button-icon button--lg',
+              styles.getStarted,
+          )}
+            to="https://t.me/+F2a3OS2rrGBlOGFl"
+          >
+            <img
+              className={styles.Icon}
+              src={useBaseUrl("/img/telegram.svg")}
+              alt="Telegram Logo"
+              width={40}
+              height={40}
+            />{" "}
+            <span className={styles.ButtonText}>Telegram</span>
+          </Link>
 
-            <Link
-              className="button button-twitter button--lg"
-              to=""
-            >
-              <img
-                className={styles.Icon}
-                src={useBaseUrl("/img/twitter.svg")}
-                alt="X Logo"
-                width={40}
-                height={40}
-              />{" "}
-              <span className={styles.ButtonText}>X</span>
-            </Link>
-          </div>
+          <Link className={clsx(
+              'button button-icon button--lg',
+              styles.getStarted,
+          )} to="">
+            <img
+              className={styles.Icon}
+              src={useBaseUrl("/img/twitter.svg")}
+              alt="X Logo"
+              width={40}
+              height={40}
+            />{" "}
+            <span className={styles.ButtonText}>Twitter</span>
+          </Link>
+
+          <Link className={clsx(
+              'button button-icon button--lg',
+              styles.getStarted,
+          )} to="https://github.com/bridge-alchemy">
+            <img
+              className={styles.Icon}
+              src={useBaseUrl("/img/recruitment.svg")}
+              alt="Recruit Logo"
+              width={40}
+              height={40}
+            />{" "}
+            <span className={styles.ButtonText}>Recruit</span>
+          </Link>
         </div>
       </div>
     </div>

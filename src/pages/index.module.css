@@ -146,14 +146,28 @@ html[data-theme='dark'] .topBannerTitleText {
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin: 30px 0 0;
+}
+
+body .getStarted {
+  padding: 10px 15px;
+  border-radius: 30px;
+  margin: 0 10px!important;
 }
 
 .Icon {
   vertical-align: middle;
 }
 
-.ButtonText {
+[data-theme="light"] .ButtonText {
   vertical-align: middle;
+  color: #20232a;
+}
+
+[data-theme="dark"] .ButtonText {
+  vertical-align: middle;
+  color: #fff;
 }

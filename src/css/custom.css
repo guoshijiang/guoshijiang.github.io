@@ -101,18 +101,8 @@ html[data-theme="dark"] {
   fill: seagreen;
 }
 
-.button-discord {
-  background-color: #536aff;
-  margin-right: 300px;
-}
-
-.button-telegram {
-  background-color: deepskyblue;
-  margin-right: 300px;
-}
-
-.button-twitter {
-  background-color: rgb(29, 161, 242);
+.button-icon {
+  background-color: var(--ifm-color-emphasis-100);
 }
 
 [data-theme="light"] .DocSearch {
