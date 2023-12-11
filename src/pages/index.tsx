@@ -11,6 +11,7 @@ import Products, { type ProductItem } from "@site/src/data/products";
 import Partners, { type PartnerItem } from "@site/src/data/partners";
 import Translate, { translate } from "@docusaurus/Translate";
 import Typist from "react-typist";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 import styles from "./index.module.css";
 
@@ -90,6 +91,63 @@ function ProductsSection() {
   );
 }
 
+function CommunitySection() {
+  return (
+    <div className={clsx(styles.section)}>
+      <div className="container">
+        <Heading as="h2" className={clsx("margin-bottom--lg", "text--center")}>
+          <Translate>❤️ Join the Community</Translate>
+        </Heading>
+        <div className="row">
+          <div className="col">
+          <Link
+              className="button button-discord button--lg"
+              to="https://discord.gg/9N62gJgMVW"
+            >
+              <img
+                className={styles.Icon}
+                src={useBaseUrl("/img/discord.svg")}
+                alt="Discord Logo"
+                width={40}
+                height={40}
+              />{" "}
+              <span className={styles.ButtonText}>Discord</span>
+            </Link>
+
+            <Link
+              className="button button-telegram button--lg"
+              to="https://t.me/+F2a3OS2rrGBlOGFl"
+            >
+              <img
+                className={styles.Icon}
+                src={useBaseUrl("/img/telegram.svg")}
+                alt="Telegram Logo"
+                width={40}
+                height={40}
+              />{" "}
+              <span className={styles.ButtonText}>Telegram</span>
+            </Link>
+
+            <Link
+              className="button button-twitter button--lg"
+              to=""
+            >
+              <img
+                className={styles.Icon}
+                src={useBaseUrl("/img/twitter.svg")}
+                alt="X Logo"
+                width={40}
+                height={40}
+              />{" "}
+              <span className={styles.ButtonText}>X</span>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function PartnersSection() {
   const partnerColumns: PartnerItem[][] = [[], [], []];
   Partners.filter((partner) => partner.showOnHomepage).forEach((partner, i) =>
@@ -159,8 +217,9 @@ export default function Home(): JSX.Element {
       <main>
         <HomepageFeatures />
         <ProductsSection />
-        <PartnersSection />
         <TeamsSection />
+        <PartnersSection />
+        <CommunitySection />
       </main>
     </Layout>
   );

@@ -149,3 +149,11 @@ html[data-theme='dark'] .topBannerTitleText {
   align-items: center;
   justify-content: center;
 }
+
+.Icon {
+  vertical-align: middle;
+}
+
+.ButtonText {
+  vertical-align: middle;
+}
