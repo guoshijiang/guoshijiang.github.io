@@ -8,11 +8,11 @@ export type PartnerItem = Partner & {
 
 const Partners: PartnerItem[] = [
   {
-    url: 'https://branditechture.agency/brand-logos/wp-content/uploads/2022/08/MANTRA-DAO-1024x709.png',
+    url: 'https://avatars.githubusercontent.com/u/106918908?s=96&v=4',
     showOnHomepage: true,
   },
   {
-    url: 'https://moonbeam.network/wp-content/uploads/2021/06/ethsign-500.png',
+    url: 'https://learnblockchain.cn/css/default/logo.png',
     showOnHomepage: true,
   },
 ];
