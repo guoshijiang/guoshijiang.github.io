@@ -123,7 +123,7 @@ const Teams = [
     name: 'Kenn-eth',
     title: translate({
       id: 'homepage.teams.Kenn-eth.title',
-      message: 'Tech Writer',
+      message: 'Tech Doc Writer',
       description: 'Title of teams of Kenn-eth on the home page',
     }),
   },
@@ -170,15 +170,6 @@ const Teams = [
       id: 'homepage.teams.karezachen.title',
       message: 'Backend Developer',
       description: 'Title of teams of karezachen on the home page',
-    }),
-  },
-  {
-    imgUrl: 'https://avatars.githubusercontent.com/u/44748591?v=4',
-    name: 'JSeasy',
-    title: translate({
-      id: 'homepage.teams.JSeasy.title',
-      message: 'Frontend Developer',
-      description: 'Title of teams of JSeasy on the home page',
     }),
   },
   {
