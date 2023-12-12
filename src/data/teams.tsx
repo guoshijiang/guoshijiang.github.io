@@ -118,5 +118,14 @@ const Teams = [
       description: 'Title of teams of abandonsz on the home page',
     }),
   },
+  {
+    imgUrl: 'https://avatars.githubusercontent.com/u/111177450?v=4',
+    name: 'Kenn-eth',
+    title: translate({
+      id: 'homepage.teams.Kenn-eth.title',
+      message: 'Tech Writer',
+      description: 'Title of teams of Kenn-eth on the home page',
+    }),
+  },
 ];
 export default Teams;
