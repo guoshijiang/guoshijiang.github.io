@@ -154,5 +154,77 @@ const Teams = [
       description: 'Title of teams of yucheng-Li on the home page',
     }),
   },
+  {
+    imgUrl: 'https://avatars.githubusercontent.com/u/15226641?v=4',
+    name: 'liufeihe',
+    title: translate({
+      id: 'homepage.teams.liufeihe.title',
+      message: 'Backend Developer',
+      description: 'Title of teams of liufeihe on the home page',
+    }),
+  },
+  {
+    imgUrl: 'https://avatars.githubusercontent.com/u/45326345?v=4',
+    name: 'karezachen',
+    title: translate({
+      id: 'homepage.teams.karezachen.title',
+      message: 'Backend Developer',
+      description: 'Title of teams of karezachen on the home page',
+    }),
+  },
+  {
+    imgUrl: 'https://avatars.githubusercontent.com/u/44748591?v=4',
+    name: 'JSeasy',
+    title: translate({
+      id: 'homepage.teams.JSeasy.title',
+      message: 'Frontend Developer',
+      description: 'Title of teams of JSeasy on the home page',
+    }),
+  },
+  {
+    imgUrl: 'https://avatars.githubusercontent.com/u/44748591?v=4',
+    name: 'JSeasy',
+    title: translate({
+      id: 'homepage.teams.JSeasy.title',
+      message: 'Frontend Developer',
+      description: 'Title of teams of JSeasy on the home page',
+    }),
+  },
+  {
+    imgUrl: 'https://avatars.githubusercontent.com/u/26481195?v=4',
+    name: 'Jomosis',
+    title: translate({
+      id: 'homepage.teams.Jomosis.title',
+      message: 'Developer',
+      description: 'Title of teams of Jomosis on the home page',
+    }),
+  },
+  {
+    imgUrl: 'https://avatars.githubusercontent.com/u/13994404?v=4',
+    name: 'fengshanshan',
+    title: translate({
+      id: 'homepage.teams.fengshanshan.title',
+      message: 'Frontend Developer',
+      description: 'Title of teams of fengshanshan on the home page',
+    }),
+  },
+  {
+    imgUrl: 'https://avatars.githubusercontent.com/u/40332563?v=4',
+    name: 'fengbinwang',
+    title: translate({
+      id: 'homepage.teams.fengbinwang.title',
+      message: 'Frontend Developer',
+      description: 'Title of teams of fengbinwang on the home page',
+    }),
+  },
+  {
+    imgUrl: 'https://avatars.githubusercontent.com/u/29969410?v=4',
+    name: 'csp94',
+    title: translate({
+      id: 'homepage.teams.csp94.title',
+      message: 'Frontend Developer',
+      description: 'Title of teams of csp94 on the home page',
+    }),
+  },
 ];
 export default Teams;
