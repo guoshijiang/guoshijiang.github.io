@@ -7,7 +7,7 @@ const Teams = [
     name: 'guoshijiang',
     title: translate({
       id: 'homepage.teams.guoshijiang.title',
-      message: 'Owner',
+      message: 'Blockchain developer',
       description: 'Title of teams of guoshijiang on the home page',
     }),
   },
@@ -34,7 +34,7 @@ const Teams = [
     name: 'Jack Zhang',
     title: translate({
       id: 'homepage.teams.Jack Zhang.title',
-      message: 'Developer',
+      message: 'Solidity Developer',
       description: 'Title of teams of Jack Zhang on the home page',
     }),
   },{
@@ -42,7 +42,7 @@ const Teams = [
     name: 'jhfnetboy',
     title: translate({
       id: 'homepage.teams.jhfnetboy.title',
-      message: 'Developer',
+      message: 'Backend Developer',
       description: 'Title of teams of jhfnetboy on the home page',
     }),
   },
@@ -51,7 +51,7 @@ const Teams = [
     name: 'benjamintshi',
     title: translate({
       id: 'homepage.teams.benjamintshi.title',
-      message: 'NodeJs Developer',
+      message: 'Node Developer',
       description: 'Title of teams of benjamintshi on the home page',
     }),
   },
@@ -96,7 +96,7 @@ const Teams = [
     name: 'buildevm',
     title: translate({
       id: 'homepage.teams.buildevm.title',
-      message: 'backend Developer',
+      message: 'Researcher',
       description: 'Title of teams of buildevm on the home page',
     }),
   },
@@ -105,7 +105,7 @@ const Teams = [
     name: 'abandonsz',
     title: translate({
       id: 'homepage.teams.abandonsz.title',
-      message: 'Developer',
+      message: 'Backend Developer',
       description: 'Title of teams of abandonsz on the home page',
     }),
   },
@@ -125,6 +125,33 @@ const Teams = [
       id: 'homepage.teams.Kenn-eth.title',
       message: 'Tech Writer',
       description: 'Title of teams of Kenn-eth on the home page',
+    }),
+  },
+  {
+    imgUrl: 'https://avatars.githubusercontent.com/u/111177450?v=4',
+    name: 'yoyochan7253',
+    title: translate({
+      id: 'homepage.teams.yoyochan7253.title',
+      message: 'Product Manager',
+      description: 'Title of teams of yoyochan7253 on the home page',
+    }),
+  },
+  {
+    imgUrl: 'https://avatars.githubusercontent.com/u/11959771?v=4',
+    name: 'binkerCxb',
+    title: translate({
+      id: 'homepage.teams.binkerCxb.title',
+      message: 'FullStack Developer',
+      description: 'Title of teams of binkerCxb on the home page',
+    }),
+  },
+  {
+    imgUrl: 'https://avatars.githubusercontent.com/u/61103353?v=4',
+    name: 'yucheng-Li',
+    title: translate({
+      id: 'homepage.teams.yucheng-Li.title',
+      message: 'Frontend Developer',
+      description: 'Title of teams of yucheng-Li on the home page',
     }),
   },
 ];
