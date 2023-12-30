@@ -2,6 +2,8 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
+import Translate from '@docusaurus/Translate';
+
 type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
@@ -14,7 +16,9 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_team_up.svg').default,
     description: (
       <>
+        <Translate>
           Ethereum deposit to any layer2
+        </Translate>
       </>
     ),
   },
@@ -23,7 +27,9 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_team_up.svg').default,
     description: (
       <>
+        <Translate>
           Any layer2 withdraw to Ethereum
+        </Translate>
       </>
     ),
   },
@@ -32,7 +38,9 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_content_team.svg').default,
     description: (
       <>
+        <Translate>
           Any layer2 transfer to any layer2.
+        </Translate>
       </>
     ),
   },

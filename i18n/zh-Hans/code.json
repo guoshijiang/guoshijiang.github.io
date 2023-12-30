@@ -423,5 +423,26 @@
   "theme.unlistedContent.message": {
     "message": "此页面未列出。搜索引擎不会对其索引，只有拥有直接链接的用户才能访问。",
     "description": "The unlisted content banner message"
+  },
+  "All layer2 chain l1 to l2 deposit, l2 to l1 withdraw transactions data indexer": {
+    "message": "所有Layer2链的L1至L2存款，L2至L1提款交易数据索引器"
+  },
+  "Wrap all layer2 bridge contract support transfer ETH, Erc20 token and Nft etc from this layer2 to another layer2": {
+    "message": "将所有Layer2桥合约包装，支持从这个Layer2转移到另一个Layer2的ETH、Erc20代币和Nft等"
+  },
+  "Layer2 cross-chain bridge ui, support l1 to l2 deposit, l2 to l1 withdraw, transfer from this l2 to another l2": {
+    "message": "Layer2跨链桥梁用户界面，支持L1至L2存款,L2至L1提款，以及从此L2转移到另一个L2"
+  },
+  "L2 to L2 transfer bridge relayer": {
+    "message": "L2至L2转账桥接器"
+  },
+  "Ethereum deposit to any layer2": {
+    "message": "以太坊存款到任何Layer2"
+  },
+  "Any layer2 withdraw to Ethereum": {
+    "message": "从任何Layer2提款到以太坊"
+  },
+  "Any layer2 transfer to any layer2.": {
+    "message": "任何Layer2到任何Layer2的转账"
   }
 }
