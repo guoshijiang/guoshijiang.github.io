@@ -444,5 +444,8 @@
   },
   "Any layer2 transfer to any layer2.": {
     "message": "任何Layer2到任何Layer2的转账"
+  },
+  "An infrastructure which support l1 deposit to any l2, any l2 withdraw to l1, any l2 transfer to any l2": {
+    "message": "一个支持从L1存款到任何L2，从任何L2提款到L1，以及从任何L2转账到任何L2的基础设施"
   }
 }

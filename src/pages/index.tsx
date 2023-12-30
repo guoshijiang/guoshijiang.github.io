@@ -37,7 +37,7 @@ const HeroContent = ({ title, tagLine }): JSX.Element => {
     <div className={styles.HeroContent}>
       <h1 className={styles.HeroTitle}>{siteConfig.title}</h1>
       <Typist avgTypingDelay={40} cursor={{ hideWhenDone: true, show: false }}>
-        <p className={styles.HeroDescription}><Translate>{siteConfig.tagline}</Translate></p>
+        <p className={styles.HeroDescription}><Translate>An infrastructure which support l1 deposit to any l2, any l2 withdraw to l1, any l2 transfer to any l2</Translate></p>
       </Typist>
     </div>
   );
